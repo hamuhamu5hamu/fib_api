@@ -21,7 +21,7 @@ class FibonacciController < ApplicationController
 
   # フィボナッチ数を計算するメソッド
   def fibonacci(n)
-    return n if n <= 1
+    return n if n == 1
 
     a, b = 0, 1
     (n - 1).times do
